@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Hanno</title> 
+		<link href='http://fonts.googleapis.com/css?family=Lato:700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+		<link rel="stylesheet" type="text/css" href="Hanno_style_large.css" />
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD38gJAH4q-lJZ65ZiBbGkxRZ-XJQXE2SA"></script>
+		<link href='http://fonts.googleapis.com/css?family=Lustria' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		 <!--media="screen and (min-wdth: 400px) and (max-width: 899px)"-->
+	</head>
+	<body id="body">
+		<!-- CONTENT GOES HERE -->
+		<h1>Hanno</h1>
+		<div id="form_n_weather">
+			<h3>Search By Coordinates</h3>
+			<input type="text" placeholder="Latitude" id="Latitude"></input>
+			<input type="text" placeholder="Longitude" id="Longitude"></input>
+			<button id="theGeoButton" type="submit" class="pure-button pure-button-primary">Enter</button>
+			<h3>Search By Name</h3>
+			<input type="text" placeholder="Place" id="PlaceName"></input>
+			<button id="theTextButton" type="submit" class="pure-button pure-button-primary">Enter</button>
+			<div id="weather">
+				<div id="address">
+				</div>
+				<div id="theWeather">
+				</div>
+			</div>
+		</div>
+		<div id="map">
+		</div>
+		<!-- In the script, new divs are added to the body for news and pictures... they were removed from here because
+			on initial page load, the page would be too load with two invisible divs at the bottom and that didn't
+			look proffesional-->
+
+		<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="Hanno_script.js"></script>
+		<footer>ALL RIGHTS RESERVED. ALL CREATIVE IDEAS ON THIS PAGE, EXCEPT THE APIs, ARE SOLELY A PRODUCT OF THE GENIUS OF THE CREATOR- CHUKSY. NEVER THE LESS, "steal like an artist". Contact him at <a href="mailto:chukwuyem.onyibe@nyu.edu">chukwuyem.onyibe@nyu.edu</a></footer>
+	</body>
+</html>

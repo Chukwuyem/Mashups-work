@@ -1,0 +1,111 @@
+html, body {
+	background: url("clouds.jpg") fixed center;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+}
+
+div#title {
+	/*background: pink;*/
+	text-align: center;
+	width: 99%;
+	height: 5em;
+	margin-bottom: 10px;
+	margin: auto;
+}
+
+div#title > h1 {
+	font-family: 'Philosopher', sans-serif;
+	/*font-family: 'Great Vibes', cursive;*/
+	margin: 0px;
+	font-size: 3em;
+	display: inline;
+}
+
+div#title > h6 {
+	display: inline;
+	font-family: 'Great Vibes', cursive;
+	font-size: 1em;
+	margin-left: 5px;
+}
+
+div#title > h3 {
+	font-family: 'Rock Salt', cursive;
+	margin: 0px;
+}
+
+div#canvas_and_tale {
+	/*background: aqua;*/
+	width: 99%;
+	height: 90%;
+	padding-top: 3.5em;
+}
+
+div#tale {
+	width: 35%;
+	height: 500px;
+	display: inline-block;
+	margin-left: 1.5%;
+	/*margin-top: 2%;*/
+	border-radius: 1.5em;
+	border: 2px solid;
+	border-color: white;
+	padding: 20px;
+	font-size: 1.5em;
+	font-family: 'EB Garamond', serif;
+}
+
+canvas#canvas {
+	float: right;
+	margin-right: 1.5%;
+	/*margin-top: 2%;*/
+	border-radius: 1.5em;
+}
+
+/*div#button_div {
+	height: 4%;
+	width: 4%;
+	display: inline-block;
+}*/
+
+button#flow_cntrl {
+	background: white;
+	width: 75px;
+	height: 75px;
+	position: fixed;
+	margin-bottom: 60%;
+	border-radius: 3em;
+	margin-left: 3%;
+	border-style: none;
+	outline: 0;
+	display: none;
+}
+
+button#flow_cntrl:focus {
+	/* */
+}
+
+button#flow_cntrl> i.fa.fa-chevron-right.fa-2{
+	transition: all 0.3s ease;
+}
+
+button#flow_cntrl:hover i.fa.fa-chevron-right.fa-2{
+	/*class: "fa fa-chevron-right fa-3";*/
+	/*-ms-transform: scale(3,3), translate(10px,0px); */ /* IE 9 */
+    /*-webkit-transform: scale(3,3), translate(10px,0px); *//* Chrome, Safari, Opera */
+    /*transform: scale(3,3),translate(10px,0px);*/
+
+    -ms-transform: matrix(1.5, 0, 0, 1.5, 15, 0);
+    -webkit-transform: matrix(1.5, 0, 0, 1.5, 15, 0);
+    transform: matrix(1.5, 0, 0, 1.5, 15, 0);
+}
+
+@media screen and (max-width: 980px){
+	div#tale {
+		padding: 10px;
+	}
+	div#tale > p {
+		font-size: .85em;
+	}
+}
+

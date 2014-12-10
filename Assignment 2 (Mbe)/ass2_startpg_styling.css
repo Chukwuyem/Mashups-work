@@ -1,0 +1,108 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	height: 90%;
+	background: url("cloud_2.jpg")fixed center right;
+	background-size: cover;
+}
+
+div#title {
+	/*background: pink;*/
+	margin: auto;
+	margin-top: 80px;
+	width: 50%;
+	height: 20%;
+	font-size: 5em;
+	font-family: 'Philosopher', sans-serif;
+	text-align: center;
+}
+
+
+div#intro {
+	/*background: aqua;*/
+	width: 50%;
+	height: 35%;
+	margin: auto;
+	margin-top: 10px;
+	border-radius: 1em;
+	border: 2px solid;
+	border-color: white;
+	font-size: 1.5em;
+	padding: 1em;
+	font-family: 'Bad Script', cursive;
+}
+
+a#link2freedom {
+    display: none;
+    width: 4.5em;
+    border: 2px solid;
+    border-color: white;
+    margin: auto;
+    padding: .1em .5em;
+    font-size: 1.5em;
+    margin-top: 50px;
+    border-radius: .5em;
+    text-decoration: none;
+    color: black;
+    font-family: 'Bad Script', cursive;
+    transition: all 0.6s ease;
+
+}
+
+a#link2freedom:hover {
+	width: 5em;
+	padding: .2em .5em;
+}
+
+a#link2freedom:hover i.fa.fa-chevron-right {
+		-ms-transform: matrix(1, 0, 0, 1, 5, 0);
+    	-webkit-transform: matrix(1, 0, 0, 1, 5, 0);
+    	transform: matrix(1, 0, 0, 1, 5, 0);
+	}
+
+
+a > i.fa.fa-chevron-right {
+    float: right;
+    margin-top: 13.1%;
+}
+
+
+button#help {
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 2em 2em 0 0;
+    height: 52px;
+    width: 52px;
+    border-radius: 2em;
+    border: 2px solid;
+    border-color: white;
+    background: transparent;
+    padding: 0;
+    outline: 0;
+    transition: all 0.6s ease;
+}
+
+button#help:hover {
+	height: 62px;
+	width: 62px;
+	border-radius: 3em;
+}
+
+div#basic_info {
+    position: fixed;
+    width: 400px;
+    height: 15em;
+    right: 10px;
+    margin-top: 20px;
+    background: rgb(216, 173, 173);
+    padding: 1em;
+    border-radius: 1em;
+    border: 2px solid;
+    border-color: white;
+    display: none;
+    font-family: 'Bad Script', cursive;
+}

@@ -1,0 +1,407 @@
+html { width: 100%;
+ height: 100%;
+  }
+
+body { 
+	width: 100%;
+ 	height: 100%;
+ 	padding: 0px;
+  	font-family: 'Raleway', sans-serif;
+  	background: url("sea.jpg") fixed center;
+  	/*sourced from tumblr: http://chukky-cheese--bk.tumblr.com/post/97829277351/nevver-nuclear-fallout-nadav-kander*/
+  	background-size: cover;
+	}
+h1 {
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-size: 4em;
+	background-color: #a3a3a3;
+	color: white;
+    border-style: outset;
+    border-color: #e1dbdb;
+    border-radius: .25em;
+    margin: 10px 15px;
+
+}
+.container {
+	float: left;
+	width: 90%;
+	height: 60px;
+	margin: 10px;
+	display: table;
+	background-color: rgb(232, 229, 245);
+	border-bottom-style: ridge;
+	border-top-style: ridge;
+	border-radius: 1em;
+	padding: .5em;
+	/*font-family: 'Poiret One', cursive;*/
+	font-family: 'Raleway', sans-serif;
+}
+
+div#form_n_weather {
+	/*background-color: red;*/
+	height: 50em;
+	width: 44%;
+	display: inline-block;
+	margin: 0px;
+	margin-bottom: 15px;
+	padding: 0 2%;
+	margin-left: 5px;
+}
+
+div#map {
+	background-color: rgb(232, 229, 245);
+	float: right;
+	height: 50em;
+	width: 45%;
+	display: inline-block;
+	margin: 0px;
+	padding: 0 2%;
+	border-bottom-style: ridge;
+	border-top-style: ridge;
+	border-radius: 1em;
+	margin-right: 20px;
+}
+
+div#news {
+	/*background-color: yellow;*/
+	height: 50em;
+	width: 45%;
+	display: inline-block;
+	margin: 0px;
+	margin-bottom: 15px;
+	padding: 0 2%;
+}
+
+div#pictures {
+	/*background-color: green;*/
+	float: right;
+	height: 50em;
+	width: 45%;
+	display: inline-block;
+	margin: 0px;
+	margin-bottom: 15px;
+	padding: 0 2%;
+}
+
+div#news> h3,
+div#pictures> h3 {
+	background-color: rgb(232, 229, 245);
+	border-bottom-style: ridge;
+	border-top-style: ridge;
+	border-radius: .5em;
+	padding: 0 2%;
+}
+
+div#pictures> div.photo_container{
+	background-color: rgb(232, 229, 245);
+	border-bottom-style: ridge;
+	border-top-style: ridge;
+	border-radius: .5em;
+	padding: 0 2%;
+	margin-bottom: 10px;
+	width: 32em;
+}
+
+div#pictures> div.photo_container> img {
+	border-radius: .5em;
+}
+
+div#news> div.container> a, 
+div#pictures> div.photo_container> p> a{
+	text-decoration: none;
+	color: black;
+}
+
+div#news> div.container> a:hover,
+div#pictures> div.photo_container> p> a:hover{
+	font-weight: bold;
+}
+
+div#form_n_weather> input,
+div#form_n_weather> button {
+	display: block;
+	margin-bottom: .5em;
+    border-radius: .5em;
+}
+
+div#form_n_weather> input{
+    height: 25px;
+    width: 40%;
+    padding: 0 7px;
+    background-color: rgb(232, 229, 245);
+
+}
+div#form_n_weather> input:focus{
+	/*border: solid 1px #707070;*/
+  	box-shadow: 0 0 5px 1px #969696;
+}
+
+div#form_n_weather> div#weather {
+	/*background-color: rgb(232, 229, 245);*/
+	display: block;
+	height: 60%;
+	width: 90%;
+	margin: auto;
+	margin-top: 25px;
+}
+
+div#form_n_weather> div#weather> div#address{
+	width: 90%;
+	height: 20%;
+	background-color: rgb(232, 229, 245);
+	margin: auto;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding: .25em;
+	border-radius: 1em;
+	border-bottom-style: ridge;
+	border-top-style: ridge;
+}
+
+div#form_n_weather> div#weather> div#theWeather{
+	width: 90%;
+	height: 70%;
+	margin: auto;
+	background-color: rgb(232, 229, 245);
+	padding: .25em;
+	border-radius: 1em;
+	border-bottom-style: ridge;
+	border-top-style: ridge;
+	background: url("weather.jpg") center;
+	background-size: cover;
+	color: #f0ca00;
+}
+
+footer {
+	/*background-color: rgb(232, 229, 245);*/
+	width: 50%;
+	margin: auto;
+	border-radius: .5em;
+	border-top-style: ridge;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	z-index: -9;
+}
+
+object {
+	height: 96px;
+	width: 96px;
+	border-radius: .5em;
+	padding: 5px;
+	background-color: rgb(232, 229, 245);
+	margin-left: 15px;
+}
+
+/* Hover Shadow */
+@-webkit-keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes hover {
+  50% {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+  }
+
+  100% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+}
+
+@-webkit-keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+@keyframes hover-shadow {
+  0% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+
+  50% {
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    opacity: 1;
+  }
+
+  100% {
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
+    opacity: .4;
+  }
+}
+
+.hover-shadow {
+  display: inline-block;
+  position: relative;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hover-shadow:before {
+  pointer-events: none;
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height: 10px;
+  width: 90%;
+  opacity: 0;
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 80%);
+  /* W3C */
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform, opacity;
+  transition-property: transform, opacity;
+}
+.hover-shadow:hover, .hover-shadow:focus, .hover-shadow:active {
+  -webkit-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-animation-name: hover;
+  animation-name: hover;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+.hover-shadow:hover:before, .hover-shadow:focus:before, .hover-shadow:active:before {
+  opacity: .4;
+  -webkit-transform: translateY(6px);
+  transform: translateY(6px);
+  -webkit-animation-name: hover-shadow;
+  animation-name: hover-shadow;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@media screen and (max-width:980px){
+	html { width: 100%;
+ height: 100%;
+  }
+
+body { 
+	width: 100%;
+ 	height: 100%;
+ 	padding: 0px;
+  }
+h1 {
+	text-align: left;
+	font-family: 'Lato', sans-serif;
+	font-size: 4em;
+	margin: 1px;
+	padding-left: .25em;
+	background-color: #a3a3a3;
+	color: white;
+}
+
+div#form_n_weather {
+	float: left;
+	width: 90%;
+	height: 700px;
+	margin: 0px;
+	display: block;
+	margin-bottom: 5px;
+	margin-left: 5px;
+}
+
+div#map {
+	float: left;
+	width: 90%;
+	height: 700px;
+	margin: 0px;
+	display: block;
+	margin-top: 45px;
+	margin-left: 5px;
+}
+
+div#news {
+	width: 50%;
+	height: 700px;
+	margin: 0px;
+	display: inline-block;
+}
+
+div#pictures {
+	width: 40%;
+	height: 700px;
+	margin: 0px;
+	margin-right: 5px;
+	display: inline-block;
+}
+
+footer{
+	width: 100%;
+}
+
+@media screen and (max-width:700px){
+	h1 {
+		font-size: 3em;
+	}
+	footer{
+		display: none;
+	}
+
+	div#map {
+		width: 92.5%;
+		height: 300px;
+	}
+
+@media screen and (max-width:480px){
+	h1 {
+		font-size: 2em;
+	}
+
+	}
+
+
+}
+
+}
+

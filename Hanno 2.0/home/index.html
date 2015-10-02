@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width">
+		<title>Hanno</title>
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+		<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD38gJAH4q-lJZ65ZiBbGkxRZ-XJQXE2SA"></script>
+		<link href='https://fonts.googleapis.com/css?family=Raleway:300' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="Hanno-2-style.css" />
+	</head>
+	<body>
+		<!-- CONTENT GOES HERE -->
+		<div id="header">
+			<div id="Hanno"><h1><a href="/"><i class="fa fa-globe"></i>Hanno</a></h1></div>
+			<div id="fav_place"><h1><a href="/favourite-places">Hanno's favourite places</a></h1></div>
+		</div>
+		<button id="search_disp">Search</button>
+		<div id="search_box">
+			<div id="by_place">
+				<h3>Search By Name</h3>
+				<input type="text" placeholder="Place" id="PlaceName"></imput>
+				<button id="theTextButton" type="submit">Enter</button>
+			</div>
+			<div id="by_coord">
+				<h3>Search By Coordinates</h3>
+				<input type="text" placeholder="Latitude" id="Latitude"></input>
+				<input type="text" placeholder="Longitude" id="Longitude"></input>
+				<button id="theGeoButton" type="submit">Enter</button>
+			</div>
+		</div>
+
+		<div id="main">
+
+			<div class="cd-popup" role="alert">
+				<div class="cd-popup-container">
+					<p id='status_of_save'>Adding place to favourites...</p>
+
+					<a href="#0" class="cd-popup-close img-replace"></a>
+				</div> <!-- cd-popup-container -->
+			</div> <!-- cd-popup -->
+
+			<div id="address">
+				<p id="theAddress">34 Wogu Street, D/Line, Port-Harcourt, Rivers State, Nigeria. 00.00000, 00.00000</p>
+				<button id="FavButton" class="cd-popup-trigger"><i class="fa fa-map-marker fa-2x"></i><p id="addToFav">Add to Hanno's favourite places</p></button>
+				
+			</div>
+			<div id="weather">
+			</div>
+			<div id="map">
+			</div>
+			<div id="news">
+			</div>
+			<div id="pictures">
+			</div>
+
+		</div>
+
+		<div id="footer">
+			ALL RIGHTS RESERVED. ALL CREATIVE IDEAS ON THIS PAGE, EXCEPT THE APIs AND THE BACKGROUND PICTURE, ARE SOLELY A PRODUCT OF THE GENIUS OF THE CREATOR- CHUKSY. NEVER THE LESS, "steal like an artist". Contact him at <a href="//about.me/chukwuyem" target="_blank">Chukwuyem Onyibe</a>
+		</div>
+
+		<script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+		<script src="Hanno-2-scripts.js"></script>
+	</body>
+</html>
+
